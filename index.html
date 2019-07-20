@@ -1,6 +1,7 @@
 <html>
   <title>MyFirstApp</title>
   <head>
+	<script src="jquery.min.js"></script>
     <style type='text/css'>
         body {
             font-family: arial;
@@ -40,6 +41,46 @@
         #horizontal li a:hover{
             background-color: lightblue;
         }
+
+		.dropbtn{
+			background-color: lightblue;
+			color: red;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+		}
+		.dropdown{
+			position: relative;
+			display: inline-block;
+
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgb(0, 0, 0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.dropdown-content a:hover{
+			background-color: red;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
+
+		}
+		.dropdown:hover .dropbtn{
+			display: block;
+			background-color: #f2f2f2;
+		}
     </style>
   </head>
   <body>
@@ -66,7 +107,16 @@
             <a href="">Contact</a>
         </li>
     </ul>
-
+	<div class="dropdown">
+		<button class="dropbtn">Dropdown</button>
+		<div class="dropdown-content">
+			<a href="">Hello 1</a>
+			<a href="">Hello 2</a>
+			<a href="">Hello 3</a>
+			<a href="">Hello 4</a>
+		</div>
+	</div>
+	<br><br>
     <div style="background-color:lightblue"><img src ='https://scontent.fagc3-1.fna.fbcdn.net/v/t1.0-9/65846692_2398699326835924_7654181893897715712_o.jpg?_nc_cat=107&_nc_oc=AQm27Jq4mR00bc_0ARnTPfduuMOzUWD-ZOJR_MLD5g7iwBpou7RfGRtXgx4lTXRiIHI&_nc_ht=scontent.fagc3-1.fna&oh=ff422c4208800b669f9e190507cdafae&oe=5DA9C109' alt = 'profile pic' width="500" height="600"></div>
     <div style="background-color:lightblue">
         <h1><font color='green'>Zachary Richard Garrison</font></h1>
@@ -123,6 +173,5 @@
             </tr>
         </tbody>
     </table>
-
   </body>
 </html>
