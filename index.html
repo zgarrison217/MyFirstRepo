@@ -116,6 +116,7 @@
 			<a href="">Hello 4</a>
 		</div>
 	</div>
+	<button id="btn" class="dropbtn" value="button">Toggle image</button>
 	<br><br>
     <div style="background-color:lightblue"><img src ='https://scontent.fagc3-1.fna.fbcdn.net/v/t1.0-9/65846692_2398699326835924_7654181893897715712_o.jpg?_nc_cat=107&_nc_oc=AQm27Jq4mR00bc_0ARnTPfduuMOzUWD-ZOJR_MLD5g7iwBpou7RfGRtXgx4lTXRiIHI&_nc_ht=scontent.fagc3-1.fna&oh=ff422c4208800b669f9e190507cdafae&oe=5DA9C109' alt = 'profile pic' width="500" height="600"></div>
     <div style="background-color:lightblue">
@@ -173,5 +174,12 @@
             </tr>
         </tbody>
     </table>
+	<script>
+		$(document).ready(function(){
+		  $("#btn").click(function(){
+			$("img").toggle("slow");
+		  });
+		});
+	</script>
   </body>
 </html>
