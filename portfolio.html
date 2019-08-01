@@ -9,6 +9,47 @@
 
     <!-- JustifyGallery CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+    <style type='text/css'>
+        body {
+            font-family: arial;
+            color: blue;
+            font-size: 14px;
+        }
+        table, th, td{
+
+            border: 1px dotted blue;
+        }
+        td{
+            border: 2px dotted red;
+        }
+        #vertical{
+            list-style-type: none;
+            background-color: #f2f2f2;
+            width: 200px;
+            padding: 5px;
+        }
+        #vertical li a{
+            text-decoration: none;
+        }
+        #vertical li a:hover{
+            background-color: lightblue;
+        }
+
+        #horizontal{
+            background-color: #f2f2f2;
+            width: 300px;
+            list-style-type: none;
+            overflow: hidden;
+        }
+        #horizontal li{
+            float: left;
+            padding: 5px;
+        }
+        #horizontal li a:hover{
+            background-color: lightblue;
+        }
+    </style>
+
 
     <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,6 +59,17 @@
   </head>
   <body>
 
+     <ul id="horizontal">
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <a href="">About me</a>
+        </li>
+        <li>
+            <a href="">Contact</a>
+        </li>
+    </ul>
     <h1>Fun times and memories (Outside of School).</h1>
     <div id="myportfolio">
         <div>
