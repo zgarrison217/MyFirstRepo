@@ -1,0 +1,3 @@
+# Documentation
+The user can search NY Times using any query
+The search engine extracts from each article the headline, the url, a short snippet, the author, and the first picture.
